@@ -1,10 +1,10 @@
-$colorText : #1d1e20;
+$colorText : #ffffff;
 $templateClr : #34bbff;
 $lightBlue : #f0f8ff;
 $lightYellow: #FED382;
 $templateClr2:#0055ff;
 .dark-template-bg{
-    background-color: darken($colorText, 1% );
+    background-color: #ffffff !important;;
     color: #fff;
 }
 .dark-template-light-bg, .about-special{
