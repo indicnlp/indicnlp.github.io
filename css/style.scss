@@ -101,8 +101,8 @@ $templateClr2:#0055ff;
     background-color: #f9f9f9;
 }
 body {
-font-family: 'Nunito', sans-serif;
-    color: $colorText ;
+font-family: 'Source Serif Pro', 'BlinkMacSystemFont', 'Roboto', 'Lucida Sans', sans-serif;
+color: $colorText ;
 }
 button{
     background-color: transparent }
@@ -116,7 +116,7 @@ textarea{
     resize:none;
 }
 h1, h2, h3, h4, h5, h6{
-	font-weight: 700;
+	font-weight: 300;
 } 
 h2{
     font-size: 2.3em;
