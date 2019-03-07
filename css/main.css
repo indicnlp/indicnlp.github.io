@@ -27,10 +27,10 @@
     2. Header CSS
     3. Banner Section CSS
     4. About CSS
-        4.1 What is creptency 
+        4.1 What is creptency
         4.2 Why cryptency
         4.3 Whats special about cryptency
-        4.4 how to buy token CSS   
+        4.4 how to buy token CSS
     5. Services CSS
     6. Team CSS
     7. Roadmap CSS
@@ -38,16 +38,16 @@
     9. CTA (Our sale Ends...) CSS
     10. White Paper CSS
     11. Our Partners CSS
-    12. FaQs CSs 
-    13. Contact 
+    12. FaQs CSs
+    13. Contact
     14. Footer
     15. Template Switch Gearbox CSS
     14. Loader CSS
 
 ===================================================================*/
 /*==================== COLOR CODES =================================
-    Template Color     :#1d1e20   
-    Main Heading Color :#fff 
+    Template Color     :#1d1e20
+    Main Heading Color :#fff
     Content Color      : #fff
     Button background  : background: linear-gradient(-225deg, #0055ff 0%, #34bbff 100%);
 ====================================================================*/
@@ -454,7 +454,7 @@ hr {
   left: 0;
   margin: 0;
   transition: all ease 0.4s;
-  z-index: 5;
+  z-index: 500;
   border-radius: 0;
   perspective: 1000px;
   transform-origin: top;
