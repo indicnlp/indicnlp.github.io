@@ -8,7 +8,7 @@
   <meta content="" name="description">
 
   <!-- Favicons -->
-  <link href="img/favicon.png" rel="icon">
+  <link href="" rel="icon">
   <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
@@ -46,7 +46,7 @@
         <ul>
           <!-- <li class="active"><a href="#intro">Home</a></li> -->
           <!-- <li class="active"><a href="#about">About IndicNLP</a></li> -->
-          <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">Contribute</a></li>
+          <li><a href="javascript:void(0)" data-toggle="modal" data-target="#contributeFormModal">Contribute</a></li>
           <!-- <li><a href="#services">Services</a></li>
           <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="#team">Team</a></li>
@@ -79,25 +79,17 @@
   ============================-->
   <section id="intro" class="clearfix">
     <div class="container">
-
       <div class="intro-img">
         <img src="img/wordcloud.png" alt="" class="img-fluid">
       </div>
-
       <div class="intro-info">
-        <h2>AI for Indian Languages</h2>
+        <h2>AI for <span id="typed"></span></h2>
         <div style="color:#fff">Linguistic data platform and computing tools for the regional languages of India</div>
-        <!-- <div>
-          <a href="#about" class="btn-get-started scrollto">Get Started</a>
-          <a href="#services" class="btn-services scrollto">Our Services</a>
-        </div> -->
       </div>
-
     </div>
   </section><!-- #intro -->
 
   <main id="main">
-
     <!--==========================
       About Us Section
     ============================-->
@@ -115,19 +107,19 @@
             </p>
             <div class="icon-box wow fadeInUp">
               <div class="icon"><i class="fa fa-tag"></i></div>
-              <h4 class="title"><a href=""> Data Tagging </a></h4>
+              <h4 class="title">Data Tagging</h4>
               <p class="description">Android/iOS App for Data collection, Tagging</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
               <div class="icon"><i class="fa fa-language"></i></div>
-              <h4 class="title"><a href="">Translation</a></h4>
+              <h4 class="title">Translation</h4>
               <p class="description">Translation system across Indic and other languages</p>
             </div>
 
             <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
               <div class="icon"><i class="fa fa-microphone"></i></div>
-              <h4 class="title"><a href="">STT and TTS</a></h4>
+              <h4 class="title">STT and TTS</h4>
               <p class="description">Speech-to-Text and Text-to-Speech to help converse with the computer </p>
             </div>
           </div>
@@ -144,26 +136,33 @@
           <h3>WHY OPEN DATA?</h3>
           <p style="width: 100%; text-align: left;">We aim to collect datasets that focus on regional indian languages and keep them in the public domain for everyone forever. There are hundreds of regional language and numerous dialects in India. Availability of datasets in the open domain encourages and helps you, I and everyone to learn and build AI applications.</p>
         </header>
+        <div class="row about-container">
+            <div class="col-lg-6 wow fadeInUp pt-4 pt-lg-0 order-2 order-lg-1">
+              <img src="img/about-extra-1.svg" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <p class="description">
+                demo text
+              </p>
+            </div>
+          </div>
       </div>
-    </section><!-- #about -->
+    </section><!-- #why open data -->
 
     <!--==========================
       Services Section
     ============================-->
     <section id="services" class="section-bg">
       <div class="container">
-
         <header class="section-header">
           <h3>Our Work</h3>
           <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
         </header>
-
         <div class="row">
-
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-paper-outline" style="color: #ff689b;"></i></div>
-              <h4 class="title"><a href="">മലയാളം(Malayalam)</a></h4>
+              <h4 class="title">മലയാളം(Malayalam)</h4>
               <h5 class="description"><a href="https://github.com/adamshamsudeen/Vaaku2Vec" target="_blank">Vaaku2vec</a></h5>
               <p class="description">
                 <iframe src="https://ghbtns.com/github-btn.html?user=adamshamsudeen&repo=Vaaku2Vec&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=adamshamsudeen&repo=Vaaku2Vec&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
@@ -173,18 +172,17 @@
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-paper-outline" style="color: #e9bf06;"></i></div>
-              <h4 class="title"><a href="">தமிழ்(Tamil)</a></h4>
+              <h4 class="title"> தமிழ்(Tamil)</h4>
               <h5 class="description"><a href="https://github.com/vanangamudi/tamil-lm2" target="_blank">Tamil-lm2</a> </h5>
               <p class="description">
                 <iframe src="https://ghbtns.com/github-btn.html?user=vanangamudi&repo=tamil-lm2&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=vanangamudi&repo=tamil-lm2&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
               </p>
             </div>
           </div>
-
           <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
             <div class="box">
               <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
-              <h4 class="title"><a href="">বাংলা(Bangla)</a></h4>
+              <h4 class="title">বাংলা(Bangla)</h4>
               <h5 class="description"><a href="https://github.com/soham96/Bangla2Vec" target="_blank">Bangla2vec</a></h5>
               <p class="description">
                 <iframe src="https://ghbtns.com/github-btn.html?user=soham96&repo=Bangla2Vec&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=soham96&repo=Bangla2Vec&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
@@ -192,9 +190,9 @@
             </div>
           </div>
           <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
-            <div class="box">
-              <h4 class="title"><a href="">Want your mother tongue here?</h4>
-              <div class="description"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-plus"></i> Contribute</a</div>
+            <div class="box" style="text-align: center">
+              <h4 class="title">Want your mother tongue here?</h4>
+              <p><a id="contribute_btn" href="javascript:void(0)" data-toggle="modal" data-target="#contributeFormModal"> <i class="fa fa-plus"></i> Contribute</a></p>
             </div>
           </div>
         </div>
@@ -212,7 +210,6 @@
         </header>
 
         <div class="row row-eq-height justify-content-center">
-
           <div class="col-lg-4 mb-4">
             <div class="card wow bounceInUp">
                 <i class="fa fa-diamond"></i>
@@ -257,19 +254,19 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-4 col-md-6 footer-info">
-            <h3>IndicNLP</h3> &copy; Copyright. All Rights Reserved
+            <h3>IndicNLP</h3> &copy; Copyright 2019. All Rights Reserved
           </div>
 
           <div class="col-lg-4 col-md-6 footer-contact">
-            <h4>Contact Us</h4>
+            <h4>Connect with Us</h4>
             <p>
-              <strong>Email:</strong> indicnlp@googlegroups.com<br>
+              <strong>Email:</strong> <a href="mailto:indicnlp@googlegroups.com" target="_top">indicnlp@googlegroups.com</a><br>
             </p>
             <div class="social-links">
-              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="javascript:void(0)" class="twitter"><i class="fa fa-twitter"></i></a>
               <a href="https://www.facebook.com/groups/2249279975340362/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
-              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
-              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+              <a href="javascript:void(0)" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="javascript:void(0)" class="linkedin"><i class="fa fa-linkedin"></i></a>
             </div>
           </div>
         </div>
@@ -278,41 +275,40 @@
 
   <nav class="social">
     <ul>
-      <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">Contribute <i class="fa fa-plus"></i></a></li>
+      <li><a href="javascript:void(0)" data-toggle="modal" data-target="#contributeFormModal">Contribute <i class="fa fa-plus"></i></a></li>
     </ul>
   </nav>
   <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-  <!-- Uncomment below i you want to use a preloader -->
   <div id="preloader"></div>
-  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal fade" id="contributeFormModal" tabindex="-1" role="dialog" aria-labelledby="contributeFormModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h3 class="modal-title" id="exampleModalLabel">Leave your info</h3>
+          <h3 class="modal-title" id="contributeFormModalLabel">Leave your info</h3>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <form>
+          <form id="contribute_form">
             <div class="floating-form">
-              <div class="floating-label">      
-                <input class="floating-input" type="text" placeholder=" ">
+              <div class="floating-label">
+                <input class="floating-input" type="text" name="contributor_name" placeholder="">
                 <span class="highlight"></span>
                 <label>Name</label>
               </div>
               <div class="floating-label">      
-                <input class="floating-input" type="text" placeholder=" ">
+                <input class="floating-input" type="text" name="contributor_email_address" placeholder="">
                 <span class="highlight"></span>
-                <label>Email</label>
+                <label>Email Address</label>
               </div>
               <div class="floating-label">      
-                <input class="floating-input" type="text" placeholder=" ">
+                <input class="floating-input" type="text" name="contributor_mother_tongue" placeholder="">
                 <span class="highlight"></span>
                 <label>Mother Tongue</label>
               </div>
               <div class="floating-label">    
-                <textarea class="floating-input floating-textarea" placeholder=" "></textarea>
+                <textarea class="floating-input floating-textarea" name="contributor_message" placeholder=""></textarea>
                 <span class="highlight"></span>
                 <label>Message</label>
               </div>
@@ -321,7 +317,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Submit</button>
+          <button id="submit_contribute_form" type="button" class="btn btn-primary">Submit</button>
         </div>
       </div>
     </div>
@@ -339,11 +335,33 @@
   <script src="lib/owlcarousel/owl.carousel.min.js"></script>
   <script src="lib/isotope/isotope.pkgd.min.js"></script>
   <script src="lib/lightbox/js/lightbox.min.js"></script>
-  <!-- Contact Form JavaScript File -->
-  <script src="contactform/contactform.js"></script>
-
+  <!-- Type animation JavaScript File -->
+  <script src="js/typed.js"></script>
   <!-- Template Main Javascript File -->
   <script src="js/main.js"></script>
+  <script>
+    let typed = new Typed('#typed', {
+      strings: ['Malayalam', 'Tamil', 'Bangla'],
+      typeSpeed: 300,
+      backSpeed: 0,
+      smartBackspace: true, // this is a default
+      loop: true,
+      //showCursor: false
+    })
 
+    //Save contributor info
+    $('#submit_contribute_form').click(function(){
+      let paramObj = {}
+      $('#contribute_form').serializeArray().map((contributor) => {
+        return paramObj[contributor.name] = contributor.value
+      })
+      
+      $.post("{URL}", { paramObj: paramObj },
+        function(data){
+            
+        }
+      )
+    })
+  </script>
 </body>
 </html>
