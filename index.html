@@ -1,414 +1,349 @@
-
 <!DOCTYPE html>
-<html lang="zxx">
-    <head>
-	<title>IndicNLP</title>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="NLP, data, tagging, regional, language, tamil, malayalam, bengali" />
-	<meta name="description" content="TODO" />
-	<meta name="author" content="Pal, IndicNLP" />
-	<link rel="stylesheet" href="css/main.css" type="text/css">
-	<!-- Main Stylesheet CSS -->
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<!--Favicon icon-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>IndicNLP</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
 
-	<link rel="stylesheet" id="thb-google-fonts-css" href="https://fonts.googleapis.com/css?family=Source+Serif+Pro%3A300%2C400%2C400i%2C500%2C600%2C700%7CNoto+Sans%3A300%2C400%2C400i%2C500%2C600%2C700&amp;subset=latin" type="text/css" media="all">
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
 
-	<style>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
 
-	 .banner-language {
-	     color:#fff;
-	     z-index: 1;
-	     min-height: 200px;
-	     overflow: hidden;
-	     position: relative;
-	     background-image: url(images/olaichuvadi_30o.png);
-	     background-position: 20px;
-	     background-size: cover;
-	 }
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-	 .banner-unity {
-	     color:#fff;
-	     z-index: 1;
-	     min-height: 200px;
-	     overflow: hidden;
-	     position: relative;
-	     background-image: url(images/dravidian-language-tree.png);
-	     background-position: 20px;
-	     background-size: cover;
-	 }
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-	 .banner-ai {
-	     color:#fff;
-	     z-index: 1;
-	     min-height: 200px;
-	     overflow: hidden;
-	     position: relative;
-	     background-image: url(images/ai.png);
-	     background-position: 20px;
-	     background-size: cover;
-	 }
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+</head>
 
-	 .header-text {
-	     font-weight: 100;
-	     font-size: 50pt;
-	     font-family: 'Source Serif Pro', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
-	     color: #202020;
+<body>
 
-	 }
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header" class="fixed-top">
+    <div class="container">
 
-	 .body-text {
-	     line-height: 1.4;
-	     font-weight: 60;
-	     font-size: 18pt;
-	     font-family: 'Source Serif Pro', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
-	     color: #202020;
-	     text-align: center;
-	 }
+      <div class="logo float-left">
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <h1 class="text-light"><a href="#header"><span>IndicNLP</span></a></h1> -->
+        <a href="#intro" class="scrollto"><img src="/img/logo.png" alt="IndicNLP" class="img-fluid"></a>
+      </div>
 
-	 .last-para {
-	     line-height: 1.4;
-	     font-weight: 45;
-	     font-size: 12pt;
-	     font-family: 'Source Serif Pro', 'BlinkMacSystemFont', -apple-system, 'Roboto', 'Lucida Sans';
-	     color: #202020;
-	     text-align: justify;
-	 }
+      <nav class="main-nav float-right d-none d-lg-block">
+        <ul>
+          <!-- <li class="active"><a href="#intro">Home</a></li> -->
+          <!-- <li class="active"><a href="#about">About IndicNLP</a></li> -->
+          <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">Contribute</a></li>
+          <!-- <li><a href="#services">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#team">Team</a></li>
+          <li class="drop-down"><a href="">Drop Down</a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="drop-down"><a href="#">Drop Down 2</a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+              <li><a href="#">Drop Down 5</a></li>
+            </ul>
+          </li>
+          <li><a href="#contact">Contact Us</a></li> -->
+        </ul>
+      </nav><!-- .main-nav -->
+      
+    </div>
+  </header><!-- #header -->
 
-	</style>
+  <!--==========================
+    Intro Section
+  ============================-->
+  <section id="intro" class="clearfix">
+    <div class="container">
 
-    </head>
-    <body data-spy="scroll" data-target=".navbar" data-offset="82">
-	<div class="site-loader">
-	    <div class="loader-dots">
-		<div class="circle circle-1"></div>
-		<div class="circle circle-2"></div>
-	    </div>
-	</div>
-	<nav class="navbar wow fadeInDown" data-wow-delay=".2s" data-wow-duration="1s" id="myNavbar">
-	    <!-- Main header start -->
-	    <div class="container">
-		<!-- container-start -->
-		<div class="navbar-header ">
-		    <button data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle collapsed" type="button">
-			<!-- mobile toggle (hamburgur) -->
-			<span class="sr-only">Toggle navigation</span>
-			<span class="icon-bar top"></span>
-			<span class="icon-bar mid"></span>
-			<span class="icon-bar btm"></span>
-		    </button>
-		    <a href="#hero" class="site-logo navbar-brand"><img src="" alt="IndicNLP" class="img-responsive"></a><!-- main logo -->
-		</div>
-		<div id="navbarCollapse" class="collapse navbar-collapse ">
-		    <ul class="nav navbar-nav navbar-right " id="nav_bar">
-			<li><a href="about.html">About IndicNLP</a></li>
-			<li><a href="#contact">Contact</a></li>
-		    </ul>
-		</div>
-	    </div>
-	</nav>
-	<section class="" id="hero">
-	    <!-- particles.js container -->
+      <div class="intro-img">
+        <img src="img/wordcloud.png" alt="" class="img-fluid">
+      </div>
 
-	    <!-- stats - count particles -->
+      <div class="intro-info">
+        <h2>AI for Indian Languages</h2>
+        <div style="color:#fff">Linguistic data platform and computing tools for the regional languages of India</div>
+        <!-- <div>
+          <a href="#about" class="btn-get-started scrollto">Get Started</a>
+          <a href="#services" class="btn-services scrollto">Our Services</a>
+        </div> -->
+      </div>
 
-	    <div class="banner burger align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h1 class="wow fadeInUp" data-wow-delay=".2s" data-wow-duration="1s">
-				    <strong class="template-color">
-					IndicNLP
-				    </strong>
+    </div>
+  </section><!-- #intro -->
 
-				</h1>
-				<h2>AI for Indian languages</h2>
-				<div class="wow fadeInUp" data-wow-delay=".3s" data-wow-duration="1s">
-				    <p class="big-pera"> Linguistic data platform and computing tools for the regional languages of India</p>
-				</div>
-			    </div>
-			</div>
-			<!-- column end -->
-		    </div>
-		    <!---==============================New row =================-->
-		</div>
-		<!-- container end -->
-	    </div>
-	    <!--================= banner-end ==================-->
-	</section>
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    Language
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h2 class="body-text">
-				    It is not a bunch of words strung together that
-				    we exchange in order to get our needs met.
-				    It is not just a medium for communication.
-				    It is the medium of the mind. It shapes how we think.
-				    It is what helped us out smart other animals, by carrying knowledge of medicine, astronomy and etc over to us from the past.
-				    It is also the realm, where poetry lives.
-				    It is the time capsule of our history.
-				    It is where our ancestors are still alive.
-				    It is what comes close to what we might call heaven.
-				</h2>
+  <main id="main">
 
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
+    <!--==========================
+      About Us Section
+    ============================-->
+    <section id="about">
+      <div class="container">
+        <header class="section-header">
+          <h3>WHO ARE WE</h3>
+          <p style="width: 100%;">We have built language models for Tamil, Malayalam and Bangla. We hope to build for many more indigenous languages.</p>
+        </header>
 
-	    <!--================= banner-end ==================-->
-	</section>
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    Unity in diversity
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h2 class="body-text">
+        <div class="row about-container">
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <p>
+              We have ambitious goal of building a series of tools for indigenous languages, such
+            </p>
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"><i class="fa fa-tag"></i></div>
+              <h4 class="title"><a href=""> Data Tagging </a></h4>
+              <p class="description">Android/iOS App for Data collection, Tagging</p>
+            </div>
 
-				    Linguistic diversity is a testament to the richness and complexity of human mind and our history. Every language is unique and has different forms depending on its geographical location and culture of its indigeous people. <i>Language is the conduit that carries culture and heritage across generations.</i>
-				</h2>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"><i class="fa fa-language"></i></div>
+              <h4 class="title"><a href="">Translation</a></h4>
+              <p class="description">Translation system across Indic and other languages</p>
+            </div>
 
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"><i class="fa fa-microphone"></i></div>
+              <h4 class="title"><a href="">STT and TTS</a></h4>
+              <p class="description">Speech-to-Text and Text-to-Speech to help converse with the computer </p>
+            </div>
+          </div>
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInUp">
+            <img src="img/about-img.svg" class="img-fluid" alt="">
+          </div>
+        </div>
+      </div>
+    </section><!-- #about -->
 
-	    <!--================= banner-end ==================-->
-	</section>
+    <section id="why_open_data">
+      <div class="container">
+        <header class="section-header">
+          <h3>WHY OPEN DATA?</h3>
+          <p style="width: 100%; text-align: left;">We aim to collect datasets that focus on regional indian languages and keep them in the public domain for everyone forever. There are hundreds of regional language and numerous dialects in India. Availability of datasets in the open domain encourages and helps you, I and everyone to learn and build AI applications.</p>
+        </header>
+      </div>
+    </section><!-- #about -->
 
+    <!--==========================
+      Services Section
+    ============================-->
+    <section id="services" class="section-bg">
+      <div class="container">
 
+        <header class="section-header">
+          <h3>Our Work</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
 
+        <div class="row">
 
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    How can we preserve languages?
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h2 class="body-text">
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #ff689b;"></i></div>
+              <h4 class="title"><a href="">മലയാളം(Malayalam)</a></h4>
+              <h5 class="description"><a href="https://github.com/adamshamsudeen/Vaaku2Vec" target="_blank">Vaaku2vec</a></h5>
+              <p class="description">
+                <iframe src="https://ghbtns.com/github-btn.html?user=adamshamsudeen&repo=Vaaku2Vec&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=adamshamsudeen&repo=Vaaku2Vec&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #e9bf06;"></i></div>
+              <h4 class="title"><a href="">தமிழ்(Tamil)</a></h4>
+              <h5 class="description"><a href="https://github.com/vanangamudi/tamil-lm2" target="_blank">Tamil-lm2</a> </h5>
+              <p class="description">
+                <iframe src="https://ghbtns.com/github-btn.html?user=vanangamudi&repo=tamil-lm2&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=vanangamudi&repo=tamil-lm2&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+              </p>
+            </div>
+          </div>
 
-				    The easiest way to keep a language alive is to speak it. Using our mother tongue in day to day life will keep it alive. But is that enough? No. We want the indigenous language not just to survive but thrive. Technology has become an essential part of our day to day life. We need to be able to read, write and converse with computers in our mother tongue. That is where AI comes in.
-				</h2>
+          <div class="col-md-6 col-lg-5 offset-lg-1 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <div class="icon"><i class="ion-ios-paper-outline" style="color: #3fcdc7;"></i></div>
+              <h4 class="title"><a href="">বাংলা(Bangla)</a></h4>
+              <h5 class="description"><a href="https://github.com/soham96/Bangla2Vec" target="_blank">Bangla2vec</a></h5>
+              <p class="description">
+                <iframe src="https://ghbtns.com/github-btn.html?user=soham96&repo=Bangla2Vec&type=star&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe><iframe src="https://ghbtns.com/github-btn.html?user=soham96&repo=Bangla2Vec&type=fork&count=true" frameborder="0" scrolling="0" width="100px" height="20px"></iframe>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-6 col-lg-5 wow bounceInUp" data-wow-delay="0.1s" data-wow-duration="1.4s">
+            <div class="box">
+              <h4 class="title"><a href="">Want your mother tongue here?</h4>
+              <div class="description"><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal"> <i class="fa fa-plus"></i> Contribute</a</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- #services -->
 
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
+    <!--==========================
+      Why Us Section
+    ============================-->
+    <section id="why-us" class="wow fadeIn">
+      <div class="container">
+        <header class="section-header">
+          <h3>Section #3</h3>
+          <p>Laudem latine persequeris id sed, ex fabulas delectus quo. No vel partiendo abhorreant vituperatoribus.</p>
+        </header>
 
-	    <!--================= banner-end ==================-->
-	</section>
+        <div class="row row-eq-height justify-content-center">
 
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-diamond"></i>
+              <div class="card-body">
+                <h5 class="card-title">Corporis dolorem</h5>
+                <p class="card-text">Deleniti optio et nisi dolorem debitis. Aliquam nobis est temporibus sunt ab inventore officiis aut voluptatibus.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-language"></i>
+              <div class="card-body">
+                <h5 class="card-title">Voluptates dolores</h5>
+                <p class="card-text">Voluptates nihil et quis omnis et eaque omnis sint aut. Ducimus dolorum aspernatur.</p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
 
+          <div class="col-lg-4 mb-4">
+            <div class="card wow bounceInUp">
+                <i class="fa fa-object-group"></i>
+              <div class="card-body">
+                <h5 class="card-title">Eum ut aspernatur</h5>
+                <p class="card-text">Autem quod nesciunt eos ea aut amet laboriosam ab. Eos quis porro in non nemo ex. </p>
+                <a href="#" class="readmore">Read more </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    Aritificial Intelligence
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h2 class="body-text">
-				    Artificial Intelligence is already doing lot of amazing things. From playing Chess and Poker to driving cars and spotting celestial bodies. AI will accelerate the pace of innovation and creativity, like never before. In simple words, you can just describe the picture on your mind to the machine and it will paint it, bringing out the creativity in people who cannot handle a paint brush and even people without arms.  We believe Artificial Intelligence will play a key role in shaping our future as a whole.
-				</h2>
+  <!--==========================
+    Footer
+  ============================-->
+  <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 col-md-6 footer-info">
+            <h3>IndicNLP</h3> &copy; Copyright. All Rights Reserved
+          </div>
 
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
+          <div class="col-lg-4 col-md-6 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              <strong>Email:</strong> indicnlp@googlegroups.com<br>
+            </p>
+            <div class="social-links">
+              <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+              <a href="https://www.facebook.com/groups/2249279975340362/" class="facebook" target="_blank"><i class="fa fa-facebook"></i></a>
+              <a href="#" class="google-plus"><i class="fa fa-google-plus"></i></a>
+              <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </footer><!-- #footer -->
 
-	    <!--================= banner-end ==================-->
-	</section>
+  <nav class="social">
+    <ul>
+      <li><a href="javascript:void(0)" data-toggle="modal" data-target="#exampleModal">Contribute <i class="fa fa-plus"></i></a></li>
+    </ul>
+  </nav>
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+  <!-- Uncomment below i you want to use a preloader -->
+  <div id="preloader"></div>
+  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title" id="exampleModalLabel">Leave your info</h3>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="floating-form">
+              <div class="floating-label">      
+                <input class="floating-input" type="text" placeholder=" ">
+                <span class="highlight"></span>
+                <label>Name</label>
+              </div>
+              <div class="floating-label">      
+                <input class="floating-input" type="text" placeholder=" ">
+                <span class="highlight"></span>
+                <label>Email</label>
+              </div>
+              <div class="floating-label">      
+                <input class="floating-input" type="text" placeholder=" ">
+                <span class="highlight"></span>
+                <label>Mother Tongue</label>
+              </div>
+              <div class="floating-label">    
+                <textarea class="floating-input floating-textarea" placeholder=" "></textarea>
+                <span class="highlight"></span>
+                <label>Message</label>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/mobile-nav/mobile-nav.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="lib/isotope/isotope.pkgd.min.js"></script>
+  <script src="lib/lightbox/js/lightbox.min.js"></script>
+  <!-- Contact Form JavaScript File -->
+  <script src="contactform/contactform.js"></script>
 
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
 
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    What should we do?
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6 text-center">
-			<!-- row start -->
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-				<h2 class="body-text">
-
-				    But we need to be ready. We need to train the machines to understand our language and that is where we need your help. We need your help to teach AI your language. AI can already understand many languages like English and French, because there are huge corpora from which the AI can learn. Indigenous languages do not have that. Join us in our quest to make machines learn what it means be unified under rich diversity.
-
-
-				</h2>
-
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
-
-	    <!--================= banner-end ==================-->
-	</section>
-
-
-	<section class="">
-	    <div class=" burger  align-item-center parallax">
-		<div id="particles-js"></div>
-		<div class="container" style="z-index: 5">
-		    <!-- container-start -->
-		    <div class="row align-item-center mt6 text-center">
-			<div class="col-sm-12 col-lg-12">
-			    <h1 class="header-text">
-				<strong class="template-color">
-				    What have we done so far?
-				</strong>
-			    </h1>
-			</div>
-		    </div>
-		    <div class="row align-item-center mt6">
-			<!-- row start -->
-			<h2 class="body-text">
-
-			    We have built language models for Tamil, Malayalam and Bangla.
-			</h2>
-
-			<div class="col-sm-12 col-lg-12">
-			    <!-- column start -->
-			    <div class="banner-text">
-
-				<p class="last-para">
-				    Language model is the ability assess whether a given sentence is valid one.
-				    For example, a native english speaker can easily say that
-				    the phrase <i>'how are you?'</i> is valid but <i>'are how you?'</i> is not.
-
-				    <br>
-				    <br>
-				    Language modelling can also be thought of as: given sentence with few words removed, one can easily fill in those blanks.
-				    <i>Everyday, I ____ up at 6 am and drink ____ before going to the gym.</i> The first blank can be filled with
-				    <i>wake</i> and second one with anyone word among <i>tea, coffee, juice and water </i>
-				</br>
-				You can play with the model <a href="http://meain.io/w2vui">here</a>
-				</p>
-
-				<p class="last-para">
-				    We have ambitious goal of building a series of tools for indigenous languages, such
-				    <ul>
-					<li class="last-para"> Android/iOS App for Data collection, Tagging </li>
-					<li class="last-para"> speech-to-text and text-to-speech to help converse with the computer </li>
-					<li class="last-para"> translation system across Indic and other languages. </li>
-					<li class="last-para"> Auto complete keyboard utility for Indic languages </li>
-					<li class="last-para"> document analysis and recognition system </li>
-				    </ul>
-
-
-				</p>
-				<p class="last-para">
-				    But one step at a time. Our first task to build a parallel corpus for training the translation model.
-				    Please join the group <a href="https://groups.google.com/forum/#!forum/indicnlp" ><i>indicnlp@googlegroups.com</i></a> to help.
-				</p>
-				<p class="last-para">
-				    For more information, suggestions or questions, you can contact us at <a href="mailto:96soham96@gmail.com">this</a> email id.
-				</p>
-			    </div>
-			</div>
-		    </div>
-		    <!-- column end -->
-		</div>
-		<!-- container end -->
-	    </div>
-
-	    <!--================= banner-end ==================-->
-	</section>
-
-
-
-	<script src="js/jquery3.2.1.min.js"></script><!-- JQUERY LIBRARY -->
-	<script src="js/particles.min.js"></script><!-- Particles JS -->
-	<script src="js/bootstrap.min.js"></script><!-- Bootstrap JS -->
-	<script src="https://www.youtube.com/player_api"></script>
-	<script src="js/main.js"></script><!-- Main JS -->
-	<script src="js/wow.min.js"></script><!-- Main JS -->
-    </body>
+</body>
 </html>
